@@ -1,0 +1,23 @@
+.odd 
+{
+      background-color: rgba(235, 0, 0,0.6);
+      font-family: serif;
+}
+
+.large 
+{
+      font-size: 32px;
+}
+
+#one 
+{
+      background-color: blue;
+      font-size: 32px;
+}
+
+#four 
+{
+      font-weight: bold;
+      font-size: 28px;
+      background-color: rgba(235, 0, 0, 0.6);
+}
