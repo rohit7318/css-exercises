@@ -8,6 +8,7 @@ body {
   height: 72px;
   background: darkmagenta;
   color: white;
+  
 }
 
 .footer {
@@ -26,4 +27,92 @@ body {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+}
+
+
+/* Solution */
+
+*
+{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+body 
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.header 
+{
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  padding-left: 1rem;
+}
+
+
+.container 
+{
+  display: flex;
+
+}
+
+.sidebar 
+{
+  flex-shrink: 0;
+  padding-top: 48px;
+}
+
+
+li 
+{
+  list-style-type: none;
+  margin-bottom: .5rem;
+}
+li a 
+{
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+}
+
+
+
+
+.cards 
+{
+  display: flex;
+  column-gap: 1.5rem;
+  row-gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 48px;
+}
+
+
+.cards .card 
+{
+  max-width: 300px;
+  flex: 1 1 300px;
+  padding: 1rem 1rem 0 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+}
+
+
+.container 
+{
+  flex-grow: 3;
+}
+
+.footer 
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
