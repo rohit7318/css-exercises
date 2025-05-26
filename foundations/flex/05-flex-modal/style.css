@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 html, body {
   height: 100%;
 }
@@ -17,7 +23,7 @@ body {
 
 .modal {
   background: white;
-  width: 480px;
+  width: 550px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
 }
@@ -66,4 +72,33 @@ button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+}
+
+
+/* Solution */
+
+.modal 
+{
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  padding: 16px;
+  gap: 16px;
+}
+
+.icon, .close-button
+{
+  flex-shrink: 0;
+}
+
+.header
+{
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+.text 
+{
+  margin-bottom: 0.6rem;
 }
